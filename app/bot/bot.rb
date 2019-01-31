@@ -1,4 +1,12 @@
 require 'facebook/messenger'
+const PAGE_ACCESS_TOKEN = process.env.PAGE_ACCESS_TOKEN;
+app.get('/webhook', (req, res) => {
+  
+  const VERIFY_TOKEN = "boubou";
+  
+  ...
+  
+})
 
 include Facebook::Messenger
 Facebook::Messenger::Subscriptions.subscribe(
